@@ -32,7 +32,6 @@ input[type=radio],input[type=checkbox]{flex:none;width:18px;height:18px;margin:3
 textarea,input[type=text]{display:block;width:100%;box-sizing:border-box;font:inherit;color:inherit;background:var(--paper);border:1px solid var(--muted);border-radius:6px;padding:8px 10px}
 textarea{resize:vertical}
 .desc{margin:0 0 8px;font-size:15px;color:var(--muted)}
-.sub{display:block;margin:10px 0 6px}
 .opt small{display:block;font-size:14px;color:var(--muted)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
@@ -47,7 +46,7 @@ textarea{resize:vertical}
 </header>
 <p class="note">Preview of the draft questions, shown roughly as respondents will see them. This is not the live survey: nothing you select or type here is saved or sent. When you send comments, please mention the question number (for example, Q1).</p>
 <nav aria-label="Sections">
-<a href="#s1">1. Purpose</a><a href="#s2">2. Membership</a><a href="#s3">3. Participation</a><a href="#s4">4. Name</a>
+<a href="#s1">1. Purpose</a><a href="#s2">2. Membership</a><a href="#s3">3. Participation</a><a href="#s4">4. Final Thoughts</a>
 </nav>
 
 <h2 id="s1">1. Purpose and Priorities</h2>
@@ -101,30 +100,22 @@ textarea{resize:vertical}
 <label class="opt"><input type="checkbox"> Stay informed for now</label>
 </fieldset>
 
-<h2 id="s4">4. Name and Final Thoughts</h2>
-<fieldset class="q">
-<legend><span class="qn">Q6</span> Some members have suggested a new name instead of "LICIS." What is your view?</legend>
-<label class="opt"><input type="radio" name="q6"> Keep LICIS</label>
-<label class="opt"><input type="radio" name="q6"> Open to a new name</label>
-<label class="opt"><input type="radio" name="q6"> No preference</label>
-<label class="sub" for="q6w">Your suggested name and your reason for it (Optional)</label>
-<textarea id="q6w" rows="2"></textarea>
-</fieldset>
+<h2 id="s4">4. Final Thoughts</h2>
 <div class="q">
-<label class="qt" for="q7"><span class="qn">Q7</span> Five years from now, what would success look like for this organization? (A few sentences is fine)</label>
+<label class="qt" for="q6"><span class="qn">Q6</span> Five years from now, what would success look like for this organization? (A few sentences is fine)</label>
+<textarea id="q6" rows="3"></textarea>
+</div>
+<div class="q">
+<label class="qt" for="q7"><span class="qn">Q7</span> Is there anything else the working group should know? (Optional)</label>
 <textarea id="q7" rows="3"></textarea>
 </div>
 <div class="q">
-<label class="qt" for="q8"><span class="qn">Q8</span> Is there anything else the working group should know? (Optional)</label>
-<textarea id="q8" rows="3"></textarea>
+<label class="qt" for="q8"><span class="qn">Q8</span> Your name and masjid or institution (Optional. Leave blank to stay anonymous.)</label>
+<input type="text" id="q8">
 </div>
 <div class="q">
-<label class="qt" for="q9"><span class="qn">Q9</span> Your name and masjid or institution (Optional. Leave blank to stay anonymous.)</label>
-<input type="text" id="q9">
-</div>
-<div class="q">
-<label class="qt" for="q10"><span class="qn">Q10</span> Is there anything that would make you hesitant to take part? (Optional)</label>
-<textarea id="q10" rows="3"></textarea>
+<label class="qt" for="q9"><span class="qn">Q9</span> Is there anything that would make you hesitant to take part? (Optional)</label>
+<textarea id="q9" rows="3"></textarea>
 </div>
 </div>
 </body>
