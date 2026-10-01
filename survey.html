@@ -32,6 +32,7 @@ input[type=radio],input[type=checkbox]{flex:none;width:18px;height:18px;margin:3
 textarea,input[type=text]{display:block;width:100%;box-sizing:border-box;font:inherit;color:inherit;background:var(--paper);border:1px solid var(--muted);border-radius:6px;padding:8px 10px}
 textarea{resize:vertical}
 .desc{margin:0 0 8px;font-size:15px;color:var(--muted)}
+.sub{display:block;margin:10px 0 6px}
 .opt small{display:block;font-size:14px;color:var(--muted)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
@@ -79,24 +80,20 @@ textarea{resize:vertical}
 <label class="opt"><input type="checkbox"> Shia imams and scholars</label>
 <label class="opt"><input type="checkbox"> Not sure / needs more discussion</label>
 </fieldset>
-<div class="q">
-<label class="qt" for="q4"><span class="qn">Q4</span> Five years from now, what would success look like for this organization? (A few sentences is fine)</label>
-<textarea id="q4" rows="3"></textarea>
-</div>
 
 <h2 id="s3">3. Your Participation</h2>
 <fieldset class="q">
-<legend><span class="qn">Q5</span> If you serve at a masjid with a board, how likely is the board to support you taking part?</legend>
-<label class="opt"><input type="radio" name="q5"> Very likely</label>
-<label class="opt"><input type="radio" name="q5"> Likely</label>
-<label class="opt"><input type="radio" name="q5"> Not sure</label>
-<label class="opt"><input type="radio" name="q5"> Unlikely</label>
-<label class="opt"><input type="radio" name="q5"> Very unlikely</label>
-<label class="opt"><input type="radio" name="q5"> Does not apply to me</label>
+<legend><span class="qn">Q4</span> If you serve at a masjid with a board, how likely is the board to support you taking part?</legend>
+<label class="opt"><input type="radio" name="q4"> Very likely</label>
+<label class="opt"><input type="radio" name="q4"> Likely</label>
+<label class="opt"><input type="radio" name="q4"> Not sure</label>
+<label class="opt"><input type="radio" name="q4"> Unlikely</label>
+<label class="opt"><input type="radio" name="q4"> Very unlikely</label>
+<label class="opt"><input type="radio" name="q4"> Does not apply to me</label>
 </fieldset>
-<fieldset class="q" aria-describedby="q6d">
-<legend><span class="qn">Q6</span> Which of these would you be willing to do? (Select all that apply)</legend>
-<p class="desc" id="q6d">Committee and leadership roles are working roles with real duties, not honorary titles. The requirements below are a draft and may change, but anyone who serves would be expected to meet them, and someone who stops meeting them may be asked to step down.</p>
+<fieldset class="q" aria-describedby="q5d">
+<legend><span class="qn">Q5</span> Which of these would you be willing to do? (Select all that apply)</legend>
+<p class="desc" id="q5d">Committee and leadership roles are working roles with real duties, not honorary titles. The requirements below are a draft and may change, but anyone who serves would be expected to meet them, and someone who stops meeting them may be asked to step down.</p>
 <label class="opt"><input type="checkbox"> Attend general meetings (about 2 to 4 a year)</label>
 <label class="opt"><input type="checkbox"> <span>Serve on a committee (e.g., hilal, halal, youth). <small>Requires: a 1-year term, attending at least 3 of every 4 committee meetings (about monthly), completing assigned tasks on time, and roughly 2 to 4 hours a month.</small></span></label>
 <label class="opt"><input type="checkbox"> <span>Serve in a leadership role (board member or officer). <small>Requires: a 1 to 2 year term, attending at least 3 of every 4 board meetings (about monthly), preparing for meetings and following through on decisions, signing a yearly conflict-of-interest statement, and roughly 4 to 8 hours a month.</small></span></label>
@@ -106,26 +103,28 @@ textarea{resize:vertical}
 
 <h2 id="s4">4. Name and Final Thoughts</h2>
 <fieldset class="q">
-<legend><span class="qn">Q7</span> Some members have suggested a new name instead of "LICIS." What is your view?</legend>
-<label class="opt"><input type="radio" name="q7"> Keep LICIS</label>
-<label class="opt"><input type="radio" name="q7"> Open to a new name</label>
-<label class="opt"><input type="radio" name="q7"> No preference</label>
+<legend><span class="qn">Q6</span> Some members have suggested a new name instead of "LICIS." What is your view?</legend>
+<label class="opt"><input type="radio" name="q6"> Keep LICIS</label>
+<label class="opt"><input type="radio" name="q6"> Open to a new name</label>
+<label class="opt"><input type="radio" name="q6"> No preference</label>
+<label class="sub" for="q6w">Your suggested name and your reason for it (Optional)</label>
+<textarea id="q6w" rows="2"></textarea>
 </fieldset>
 <div class="q">
-<label class="qt" for="q8"><span class="qn">Q8</span> If you have a name to suggest, write it here along with your reason for it. (Optional)</label>
+<label class="qt" for="q7"><span class="qn">Q7</span> Five years from now, what would success look like for this organization? (A few sentences is fine)</label>
+<textarea id="q7" rows="3"></textarea>
+</div>
+<div class="q">
+<label class="qt" for="q8"><span class="qn">Q8</span> Is there anything else the working group should know? (Optional)</label>
 <textarea id="q8" rows="3"></textarea>
 </div>
 <div class="q">
-<label class="qt" for="q9"><span class="qn">Q9</span> Is there anything else the working group should know? (Optional)</label>
-<textarea id="q9" rows="3"></textarea>
+<label class="qt" for="q9"><span class="qn">Q9</span> Your name and masjid or institution (Optional. Leave blank to stay anonymous.)</label>
+<input type="text" id="q9">
 </div>
 <div class="q">
-<label class="qt" for="q10"><span class="qn">Q10</span> Your name and masjid or institution (Optional. Leave blank to stay anonymous.)</label>
-<input type="text" id="q10">
-</div>
-<div class="q">
-<label class="qt" for="q11"><span class="qn">Q11</span> Is there anything that would make you hesitant to take part? (Optional)</label>
-<textarea id="q11" rows="3"></textarea>
+<label class="qt" for="q10"><span class="qn">Q10</span> Is there anything that would make you hesitant to take part? (Optional)</label>
+<textarea id="q10" rows="3"></textarea>
 </div>
 </div>
 </body>
