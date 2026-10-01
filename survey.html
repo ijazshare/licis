@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>LICIS Survey Draft</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{--paper:#f6f7f4;--surface:#ffffff;--ink:#1b2420;--muted:#5c6862;--rule:#d6ddd8;--accent:#1e5a45;--accent-soft:#e3efe8;
+  --display:"Amiri",Georgia,"Times New Roman",serif;--body:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--paper:#111614;--surface:#182019;--ink:#e4e9e5;--muted:#98a49d;--rule:#2b3530;--accent:#7fcbaa;--accent-soft:#1f3329}}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#111614;--surface:#182019;--ink:#e4e9e5;--muted:#98a49d;--rule:#2b3530;--accent:#7fcbaa;--accent-soft:#1f3329}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 var(--body);padding-inline:clamp(16px,4vw,56px);padding-block:32px 64px}
+.wrap{max-width:1040px;margin:0 auto}
+header{border-bottom:2px solid var(--accent);padding-bottom:20px;margin-bottom:20px}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 8px}
+h1{font:700 40px/1.1 var(--display);margin:0 0 10px;text-wrap:balance}
+.meta{color:var(--muted);margin:0;font-size:15px}
+.note{margin:0 0 20px;padding:12px 16px;border-left:3px solid var(--accent);background:var(--surface);color:var(--muted);font-style:italic}
+nav{display:flex;flex-wrap:wrap;gap:6px 14px;padding:12px 16px;background:var(--accent-soft);border-radius:6px;font-size:15px}
+nav a{color:var(--accent);text-decoration:none;font-weight:600}
+nav a:hover,nav a:focus-visible{text-decoration:underline;outline:none}
+h2{font:700 28px/1.2 var(--display);margin:40px 0 16px;padding-top:24px;border-top:1px solid var(--rule);text-wrap:balance}
+.q{margin:0 0 14px;padding:16px 18px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);min-width:0}
+.q legend{float:left;width:100%;padding:0}
+.q legend+*{clear:both}
+.q legend,.qt{display:block;font-weight:600;margin:0 0 10px}
+.qn{color:var(--accent)}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:5px 0;cursor:pointer}
+input[type=radio],input[type=checkbox]{flex:none;width:18px;height:18px;margin:3px 0 0;accent-color:var(--accent);cursor:pointer}
+.scale{max-width:560px}
+.pts{display:grid;grid-template-columns:repeat(5,1fr)}
+.pts label{display:flex;flex-direction:column;align-items:center;gap:4px;padding:4px 0;cursor:pointer;font-weight:600}
+.pts input{margin:0}
+.ends{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:6px;font-size:14px;color:var(--muted)}
+.ends :nth-child(2){text-align:center}
+.ends :last-child{grid-column:3;text-align:right}
+textarea,input[type=text]{display:block;width:100%;box-sizing:border-box;font:inherit;color:inherit;background:var(--paper);border:1px solid var(--muted);border-radius:6px;padding:8px 10px}
+textarea{resize:vertical}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<p class="eyebrow">Survey draft · For review · 1 Oct 2026</p>
+<h1>LICIS Member Survey</h1>
+<p class="meta">This short survey takes about 6 minutes. It asks what you hope this organization will achieve, so the working group can build its structure around your answers. Your answers stay anonymous unless you add your name at the end.</p>
+</header>
+<p class="note">Preview of the draft questions, shown roughly as respondents will see them. This is not the live survey: nothing you select or type here is saved or sent. When you send comments, please mention the question number (for example, Q1).</p>
+<nav aria-label="Sections">
+<a href="#s1">1. Purpose</a><a href="#s2">2. Differences</a><a href="#s3">3. Membership</a><a href="#s4">4. Participation</a><a href="#s5">5. Name</a>
+</nav>
+
+<h2 id="s1">1. Purpose and Priorities</h2>
+<fieldset class="q">
+<legend><span class="qn">Q1</span> In the first 12 months, what should the organization focus on? (Select up to 3)</legend>
+<label class="opt"><input type="checkbox"> Coordinating moon sighting (hilal)</label>
+<label class="opt"><input type="checkbox"> Coordinating on halal food and certification</label>
+<label class="opt"><input type="checkbox"> A shared space for imams to consult and support each other</label>
+<label class="opt"><input type="checkbox"> Training and resources for imams</label>
+<label class="opt"><input type="checkbox"> Speaking with one voice to local government and media</label>
+<label class="opt"><input type="checkbox"> Responding together to community crises</label>
+<label class="opt"><input type="checkbox"> Joint community programs or events</label>
+<label class="opt"><input type="checkbox"> Interfaith relations</label>
+<label class="opt"><input type="checkbox"> Other</label>
+</fieldset>
+<div class="q">
+<label class="qt" for="q2"><span class="qn">Q2</span> Five years from now, what would success look like for this organization? (A few sentences is fine)</label>
+<textarea id="q2" rows="3"></textarea>
+</div>
+<fieldset class="q" aria-describedby="q3e">
+<legend><span class="qn">Q3</span> Should the organization focus on religious matters, civic and public matters, or both?</legend>
+<div class="scale">
+<div class="pts"><label>1<input type="radio" name="q3"></label><label>2<input type="radio" name="q3"></label><label>3<input type="radio" name="q3"></label><label>4<input type="radio" name="q3"></label><label>5<input type="radio" name="q3"></label></div>
+<div class="ends" id="q3e"><span>1 = Religious and scholarly matters only</span><span>3 = Both equally</span><span>5 = Mainly civic and public affairs</span></div>
+</div>
+</fieldset>
+<fieldset class="q" aria-describedby="q4e">
+<legend><span class="qn">Q4</span> Beyond what individual imams and the existing shariah board already do, how much would a formal organization add?</legend>
+<div class="scale">
+<div class="pts"><label>1<input type="radio" name="q4"></label><label>2<input type="radio" name="q4"></label><label>3<input type="radio" name="q4"></label><label>4<input type="radio" name="q4"></label><label>5<input type="radio" name="q4"></label></div>
+<div class="ends" id="q4e"><span>1 = Very little</span><span>5 = A great deal</span></div>
+</div>
+</fieldset>
+
+<h2 id="s2">2. Handling Differences</h2>
+<fieldset class="q">
+<legend><span class="qn">Q5</span> When members disagree on moon sighting (hilal), what should the organization do?</legend>
+<label class="opt"><input type="radio" name="q5"> Consult and agree on one joint position</label>
+<label class="opt"><input type="radio" name="q5"> Share the majority view and note the other views</label>
+<label class="opt"><input type="radio" name="q5"> Share information only, and each imam or masjid decides</label>
+<label class="opt"><input type="radio" name="q5"> Not sure</label>
+</fieldset>
+<fieldset class="q">
+<legend><span class="qn">Q6</span> When members disagree on halal food or certification, what should the organization do?</legend>
+<label class="opt"><input type="radio" name="q6"> Consult and agree on one joint position</label>
+<label class="opt"><input type="radio" name="q6"> Share the majority view and note the other views</label>
+<label class="opt"><input type="radio" name="q6"> Share information only, and each imam or masjid decides</label>
+<label class="opt"><input type="radio" name="q6"> Not sure</label>
+</fieldset>
+<fieldset class="q">
+<legend><span class="qn">Q7</span> Who should be allowed to speak publicly for the organization?</legend>
+<label class="opt"><input type="radio" name="q7"> One spokesperson chosen by the members</label>
+<label class="opt"><input type="radio" name="q7"> Any elected officer</label>
+<label class="opt"><input type="radio" name="q7"> Only through statements the members have approved</label>
+<label class="opt"><input type="radio" name="q7"> No one, because the organization should not make public statements</label>
+<label class="opt"><input type="radio" name="q7"> Not sure</label>
+</fieldset>
+
+<h2 id="s3">3. Membership</h2>
+<fieldset class="q">
+<legend><span class="qn">Q8</span> Which of the following should be eligible for full membership? (Select all that apply)</legend>
+<label class="opt"><input type="checkbox"> Barelwi-leaning Sunni scholars</label>
+<label class="opt"><input type="checkbox"> Deobandi-leaning Sunni scholars</label>
+<label class="opt"><input type="checkbox"> Salafi / Ahl-e-Hadith-leaning scholars</label>
+<label class="opt"><input type="checkbox"> Sunni scholars from other backgrounds (e.g., Arab, African, Turkish, African-American traditions)</label>
+<label class="opt"><input type="checkbox"> Shia imams and scholars</label>
+<label class="opt"><input type="checkbox"> Not sure / needs more discussion</label>
+</fieldset>
+<fieldset class="q">
+<legend><span class="qn">Q9</span> The WhatsApp group does not yet include everyone. Who should we make an active effort to invite? (Select all that apply)</legend>
+<label class="opt"><input type="checkbox"> Imams serving African-American communities</label>
+<label class="opt"><input type="checkbox"> Imams serving West African communities</label>
+<label class="opt"><input type="checkbox"> Imams serving Arab, Turkish, or other communities</label>
+<label class="opt"><input type="checkbox"> Female scholars and teachers (alimaat)</label>
+<label class="opt"><input type="checkbox"> Younger or newly arrived imams</label>
+<label class="opt"><input type="checkbox"> Muslim chaplains (hospital, campus, prison)</label>
+<label class="opt"><input type="checkbox"> No one in particular for now</label>
+<label class="opt"><input type="checkbox"> Other</label>
+</fieldset>
+
+<h2 id="s4">4. Your Participation</h2>
+<fieldset class="q">
+<legend><span class="qn">Q10</span> If you serve at a masjid with a board, how likely is the board to support you taking part?</legend>
+<label class="opt"><input type="radio" name="q10"> Very likely</label>
+<label class="opt"><input type="radio" name="q10"> Likely</label>
+<label class="opt"><input type="radio" name="q10"> Not sure</label>
+<label class="opt"><input type="radio" name="q10"> Unlikely</label>
+<label class="opt"><input type="radio" name="q10"> Very unlikely</label>
+<label class="opt"><input type="radio" name="q10"> Does not apply to me</label>
+</fieldset>
+<fieldset class="q">
+<legend><span class="qn">Q11</span> What would you be willing to do? (Select all that apply)</legend>
+<label class="opt"><input type="checkbox"> Attend a few meetings a year</label>
+<label class="opt"><input type="checkbox"> Serve on a committee (e.g., hilal, halal, youth)</label>
+<label class="opt"><input type="checkbox"> Serve in a leadership role</label>
+<label class="opt"><input type="checkbox"> Help with funding</label>
+<label class="opt"><input type="checkbox"> Stay informed for now</label>
+</fieldset>
+<div class="q">
+<label class="qt" for="q12"><span class="qn">Q12</span> Is there anything that would make you hesitant to take part? (Optional)</label>
+<textarea id="q12" rows="3"></textarea>
+</div>
+
+<h2 id="s5">5. Name and Final Thoughts</h2>
+<fieldset class="q">
+<legend><span class="qn">Q13</span> Some members have suggested a new name instead of "LICIS." What is your view?</legend>
+<label class="opt"><input type="radio" name="q13"> Keep LICIS</label>
+<label class="opt"><input type="radio" name="q13"> Open to a new name</label>
+<label class="opt"><input type="radio" name="q13"> No preference</label>
+</fieldset>
+<div class="q">
+<label class="qt" for="q14"><span class="qn">Q14</span> Is there anything else the working group should know? You can also suggest names here. (Optional)</label>
+<textarea id="q14" rows="3"></textarea>
+</div>
+<div class="q">
+<label class="qt" for="q15"><span class="qn">Q15</span> Your name and masjid or institution (Optional. Leave blank to stay anonymous.)</label>
+<input type="text" id="q15">
+</div>
+</div>
+</body>
+</html>
