@@ -31,6 +31,8 @@ h2{font:700 28px/1.2 var(--display);margin:40px 0 16px;padding-top:24px;border-t
 input[type=radio],input[type=checkbox]{flex:none;width:18px;height:18px;margin:3px 0 0;accent-color:var(--accent);cursor:pointer}
 textarea,input[type=text]{display:block;width:100%;box-sizing:border-box;font:inherit;color:inherit;background:var(--paper);border:1px solid var(--muted);border-radius:6px;padding:8px 10px}
 textarea{resize:vertical}
+.desc{margin:0 0 8px;font-size:15px;color:var(--muted)}
+.opt small{display:block;font-size:14px;color:var(--muted)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 </style>
@@ -93,12 +95,13 @@ textarea{resize:vertical}
 <label class="opt"><input type="radio" name="q5"> Very unlikely</label>
 <label class="opt"><input type="radio" name="q5"> Does not apply to me</label>
 </fieldset>
-<fieldset class="q">
-<legend><span class="qn">Q6</span> What would you be willing to do? (Select all that apply)</legend>
-<label class="opt"><input type="checkbox"> Attend a few meetings a year</label>
-<label class="opt"><input type="checkbox"> Serve on a committee (e.g., hilal, halal, youth)</label>
-<label class="opt"><input type="checkbox"> Serve in a leadership role</label>
-<label class="opt"><input type="checkbox"> Help with funding</label>
+<fieldset class="q" aria-describedby="q6d">
+<legend><span class="qn">Q6</span> Which of these would you be willing to do? (Select all that apply)</legend>
+<p class="desc" id="q6d">Committee and leadership roles are working roles with real duties, not honorary titles. The requirements below are a draft and may change, but anyone who serves would be expected to meet them, and someone who stops meeting them may be asked to step down.</p>
+<label class="opt"><input type="checkbox"> Attend general meetings (about 2 to 4 a year)</label>
+<label class="opt"><input type="checkbox"> <span>Serve on a committee (e.g., hilal, halal, youth). <small>Requires: a 1-year term, attending at least 3 of every 4 committee meetings (about monthly), completing assigned tasks on time, and roughly 2 to 4 hours a month.</small></span></label>
+<label class="opt"><input type="checkbox"> <span>Serve in a leadership role (board member or officer). <small>Requires: a 1 to 2 year term, attending at least 3 of every 4 board meetings (about monthly), preparing for meetings and following through on decisions, signing a yearly conflict-of-interest statement, and roughly 4 to 8 hours a month.</small></span></label>
+<label class="opt"><input type="checkbox"> Help with funding (giving or raising funds)</label>
 <label class="opt"><input type="checkbox"> Stay informed for now</label>
 </fieldset>
 <div class="q">
